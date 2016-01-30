@@ -2,9 +2,10 @@
   "name": "combinatory-logic-to-js-compiler",
   "version": "0.0.0",
   "description": "A compiler for combinatory logic to JavaScript",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "node test"
+    "test": "tape '**/*-spec.js'",
+    "watch-test": "nodemon --exec npm t"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/benji6/combinatory-logic-to-js-compiler#readme",
   "devDependencies": {
+    "nodemon": "^1.8.1",
     "ramda": "^0.19.0",
     "tape": "^4.3.0"
   }
